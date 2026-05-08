@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridging Futures</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap">
+</head>
+<body>
+    <div class="landing-overlay" id="landingOverlay">
+        <div class="fade-text-container">
+            <div class="fade-text" id="fadeText1">Transitioning from student to adult can feel overwhelming...</div>
+            <div class="fade-text" id="fadeText2">Understanding finances, credit, and housing doesn't have to be confusing.</div>
+            <div class="fade-text" id="fadeText3">We're here to bridge the gap and guide you through the fundamentals of adulthood.</div>
+            <div class="fade-text final-text" id="fadeText4">Welcome to your journey toward financial independence.</div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">Bridging Futures</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#credit" class="nav-link">Credit</a></li>
+                <li><a href="#loans" class="nav-link">Student Loans</a></li>
+                <li><a href="#leasing" class="nav-link">Leasing</a></li>
+                <li><a href="#forum" class="nav-link">It Takes a Village Forum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section active">
+            <div class="hero">
+                <h1>Bridging the Gap to Adulthood</h1>
+                <p>Master the fundamentals of adult finances with expert guidance and peer support.</p>
+                <div class="category-cards">
+                    <div class="card" onclick="showSection('credit')">
+                        <h3>Credit</h3>
+                        <p>Build and understand your credit score</p>
+                    </div>
+                    <div class="card" onclick="showSection('loans')">
+                        <h3>Student Loans</h3>
+                        <p>Navigate loan repayment strategies</p>
+                    </div>
+                    <div class="card" onclick="showSection('leasing')">
+                        <h3>Leasing</h3>
+                        <p>Find and secure your first apartment</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="credit" class="section">
+            <div class="content credit-content">
+                <h2>Understanding Credit</h2>
+                <p class="section-intro">Credit is more than a number. Learn what a score is, how it’s built, and how credit card behavior affects your future renting and borrowing options.</p>
+
+                <div class="credit-overview">
+                    <div class="credit-metric-card">
+                        <span>What is a credit score?</span>
+                        <strong>300–850</strong>
+                        <p>A 3-digit number generated from your credit report. It tells lenders how likely you are to pay back what you borrow.</p>
+                    </div>
+                    <div class="credit-metric-card">
+                        <span>How it is used</span>
+                        <strong>Rent, loans, insurance</strong>
+                        <p>Landlords, lenders, and some employers use it to judge financial responsibility.</p>
+                    </div>
+                    <div class="credit-metric-card">
+                        <span>Key score factors</span>
+                        <strong>35 / 30 / 15</strong>
+                        <p>Payment history, utilization, and length of history are the biggest building blocks.</p>
+                    </div>
+                </div>
+
+                <div class="credit-builder">
+                    <h3>Credit Building Blocks</h3>
+                    <p>Think of credit like constructing a house. You need a clear foundation, steady walls, and regular maintenance.</p>
+                    <ul>
+                        <li><strong>Foundation:</strong> Your credit report from bureaus like Experian, TransUnion, and Equifax.</li>
+                        <li><strong>Structure:</strong> Accounts that report on-time payments, such as secured cards or credit-builder loans.</li>
+                        <li><strong>Maintenance:</strong> Pay on time, keep balances low, and avoid too many inquiries.</li>
+                    </ul>
+                </div>
+
+                <div class="credit-card-grid">
+                    <article class="credit-card">
+                        <h3>What a Credit Score Really Is</h3>
+                        <p>The score is a summary of your credit history. It is based on:</p>
+                        <ul>
+                            <li><strong>Payment history (35%):</strong> On-time payments are the most important factor.</li>
+                            <li><strong>Credit utilization (30%):</strong> How much of your available credit you use.</li>
+                            <li><strong>Length of history (15%):</strong> Older accounts help your score.</li>
+                            <li><strong>Credit mix (10%):</strong> Different types of accounts, like cards and loans.</li>
+                            <li><strong>New credit (10%):</strong> Too many recent applications can lower your score.</li>
+                        </ul>
+                        <div class="callout info">
+                            <strong>Quick fact:</strong> Your report is the file, your score is the number. Both matter.
+                        </div>
+                    </article>
+
+                    <article class="credit-card">
+                        <h3>Safe Ways to Build Credit</h3>
+                        <p>For first-time borrowers, use low-risk accounts that report well.</p>
+                        <ul>
+                            <li><strong>Secured credit card:</strong> Deposit $300-500, use up to 30%, pay it off every month.</li>
+                            <li><strong>Authorized user:</strong> Join a trusted adult’s account with a strong payment history.</li>
+                            <li><strong>Credit-builder loan:</strong> Borrow a small amount, repay it on time, and build history.</li>
+                        </ul>
+                        <div class="callout warning">
+                            <strong>Advice:</strong> Don’t open multiple new accounts at once. One steady account is better than many small ones.
+                        </div>
+                    </article>
+
+                    <article class="credit-card">
+                        <h3>Credit Card Payment Basics</h3>
+                        <p>How you use a card matters more than whether you have one.</p>
+                        <ul>
+                            <li><strong>Statement balance:</strong> The total amount billed at the end of the cycle.</li>
+                            <li><strong>Due date:</strong> Pay by this date to avoid late fees and negative reports.</li>
+                            <li><strong>Minimum payment:</strong> The smallest amount due, not the smartest amount to pay.</li>
+                            <li><strong>Best practice:</strong> Pay the full balance each month to avoid interest.</li>
+                            <li><strong>Utilization tip:</strong> Keep your balance under 30% of your limit, ideally under 10%.</li>
+                        </ul>
+                    </article>
+
+                    <article class="credit-card">
+                        <h3>Grow Your Score Over Time</h3>
+                        <p>Once you’ve established good habits, use them to expand your options.</p>
+                        <ul>
+                            <li>Request a credit limit increase after 6-12 months of on-time payments.</li>
+                            <li>Consider a second card only when you can manage it responsibly.</li>
+                            <li>Use rewards cards for predictable spending, then pay each statement in full.</li>
+                            <li>Check your report every few months and dispute any errors right away.</li>
+                        </ul>
+                        <p><strong>APR reality:</strong> A $1,000 balance at 20% APR can cost $200+ in interest per year. Paying in full avoids that charge.</p>
+                    </article>
+                </div>
+
+                <div class="credit-warnings">
+                    <div class="callout warning">
+                        <strong>Common first-timer mistake:</strong> Applying for too many cards at once. Too many hard inquiries can lower your score and make you look risky.
+                    </div>
+                    <div class="callout info">
+                        <strong>Helpful habit:</strong> Use one card for 1-2 regular expenses, pay it off immediately, and keep a small utilization percentage.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="loans" class="section">
+            <div class="content loan-content">
+                <h2>Student Loans Guide</h2>
+                <div class="loan-overview">
+                    <div class="loan-summary">
+                        <span class="loan-tag">Student Loans • First-time borrower</span>
+                        <p>Understand the difference between federal and private loans, choose a repayment plan that fits your early-career budget, and reduce interest with smart habits.</p>
+                    </div>
+                    <div class="loan-highlights">
+                        <div>
+                            <strong>Federal loans</strong>
+                            <p>Fixed rates, borrower protections, and income-driven repayment options.</p>
+                        </div>
+                        <div>
+                            <strong>Private loans</strong>
+                            <p>Shop for the lowest rate, understand variable terms, and compare refinance options.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="loan-grid">
+                    <article class="loan-card">
+                        <h3>Loan Basics</h3>
+                        <div class="loan-section">
+                            <h4>Federal Subsidized</h4>
+                            <ul>
+                                <li>Government pays interest while you’re in school</li>
+                                <li>Lower rates and borrower protections</li>
+                                <li>Available based on financial need</li>
+                            </ul>
+                        </div>
+                        <div class="loan-section">
+                            <h4>Federal Unsubsidized</h4>
+                            <ul>
+                                <li>Interest starts accruing immediately</li>
+                                <li>Not based on need</li>
+                                <li>More flexible borrowing amounts</li>
+                            </ul>
+                        </div>
+                        <div class="loan-section">
+                            <h4>Private Loans</h4>
+                            <ul>
+                                <li>Can have fixed or variable rates</li>
+                                <li>Often requires a good credit score or co-signer</li>
+                                <li>Refinance when your credit improves</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="loan-card">
+                        <h3>Prepare Before Graduation</h3>
+                        <ul>
+                            <li><strong>Know your balance:</strong> Log into StudentAid.gov to see federal loans and servicers</li>
+                            <li><strong>Start small:</strong> Paying $25-50/month on unsubsidized loans cuts future interest</li>
+                            <li><strong>Understand your servicer:</strong> They handle billing, not your loan terms</li>
+                            <li><strong>Track grace periods:</strong> Federal loans typically have 6 months after graduation</li>
+                        </ul>
+                        <div class="callout info">
+                            <strong>Tip:</strong> Interest capitalization means unpaid school-year interest can later be added to your principal.
+                        </div>
+                    </article>
+
+                    <article class="loan-card">
+                        <h3>Repayment Plan Comparison</h3>
+                        <div class="plan-table">
+                            <div class="plan-row plan-header">
+                                <span>Plan</span>
+                                <span>Monthly</span>
+                                <span>Best for</span>
+                            </div>
+                            <div class="plan-row">
+                                <span>Standard 10-Year</span>
+                                <span>$250-$300</span>
+                                <span>Lowest total interest</span>
+                            </div>
+                            <div class="plan-row">
+                                <span>Income-Driven</span>
+                                <span>10-15% of income</span>
+                                <span>Low starting salary</span>
+                            </div>
+                            <div class="plan-row">
+                                <span>Graduated</span>
+                                <span>Low then rising</span>
+                                <span>Salary expected to grow</span>
+                            </div>
+                            <div class="plan-row">
+                                <span>Extended</span>
+                                <span>Lowest monthly</span>
+                                <span>Need lower payment only</span>
+                            </div>
+                        </div>
+                        <p>Choose the plan that fits your current paycheck, then revisit annually as income changes.</p>
+                    </article>
+
+                    <article class="loan-card">
+                        <h3>Optimize Repayment</h3>
+                        <ul>
+                            <li>Set up auto-pay for 0.25% discount on most federal loans</li>
+                            <li>Pay extra toward the highest-rate loan first</li>
+                            <li>Keep communications with your servicer current</li>
+                            <li>Refinance private loans only after 6-12 months of on-time payments</li>
+                            <li>Explore forgiveness programs if you work in qualifying public service</li>
+                        </ul>
+                        <div class="callout success">
+                            <strong>Example:</strong> Adding $50/month to a $25k loan can save thousands in interest.
+                        </div>
+                    </article>
+
+                    <article class="loan-card">
+                        <h3>Practical Advice</h3>
+                        <ul>
+                            <li>Use a simple budget: rent, bills, loans, savings</li>
+                            <li>Keep an emergency fund before overpaying loans</li>
+                            <li>Watch for servicer notices and deadlines</li>
+                            <li>Avoid refinancing federal loans unless you lose access to protections</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="loan-note">
+                    <p>Start every decision with your current balance, your interest rates, and a realistic first-job budget. The best plan is the one you can stick with.</p>
+                </div>
+
+                <button class="download-btn" onclick="downloadChecklist('loans')">📥 Download Loan Repayment Planner</button>
+            </div>
+        </section>
+
+        <section id="leasing" class="section">
+            <div class="content">
+                <h2>First-Time Renter's Complete Guide</h2>
+                <p style="text-align: center; color: #666; margin-bottom: 30px;"><em>Designed specifically for first-time renters. Follow this step-by-step timeline to avoid common mistakes.</em></p>
+                
+                <div class="progress-timeline">
+                    <div class="timeline-step active" onclick="scrollToStep('leasing-step-1')">
+                        <div class="timeline-marker">1</div>
+                        <p>Prep</p>
+                    </div>
+                    <div class="timeline-step" onclick="scrollToStep('leasing-step-2')">
+                        <div class="timeline-marker">2</div>
+                        <p>Search</p>
+                    </div>
+                    <div class="timeline-step" onclick="scrollToStep('leasing-step-3')">
+                        <div class="timeline-marker">3</div>
+                        <p>View</p>
+                    </div>
+                    <div class="timeline-step" onclick="scrollToStep('leasing-step-4')">
+                        <div class="timeline-marker">4</div>
+                        <p>Apply</p>
+                    </div>
+                    <div class="timeline-step" onclick="scrollToStep('leasing-step-5')">
+                        <div class="timeline-marker">5</div>
+                        <p>Sign</p>
+                    </div>
+                    <div class="timeline-step" onclick="scrollToStep('leasing-step-6')">
+                        <div class="timeline-marker">6</div>
+                        <p>Move In</p>
+                    </div>
+                </div>
+
+                <div class="content-grid">
+                    <!-- STEP 1 -->
+                    <div class="content-card" id="leasing-step-1">
+                        <h3>Step 1: Get Your Finances in Order (2-3 Months Before)</h3>
+                        
+                        <p><strong>Hey first-timer, let's start with the basics:</strong> Your rent shouldn't eat up more than 30% of your take-home pay. Here's how to calculate it properly.</p>
+                        
+                        <div class="rent-calculator">
+                            <h4>🧮 Rent Affordability Calculator</h4>
+                            <div class="calculator-inputs">
+                                <label>Monthly Take-Home Pay: $<input type="number" id="income" placeholder="3000"></label>
+                                <label>Other Monthly Expenses (food, transport, etc.): $<input type="number" id="expenses" placeholder="800"></label>
+                                <button onclick="calculateAffordableRent()">Calculate Max Rent</button>
+                            </div>
+                            <div id="calculator-result" class="calculator-result"></div>
+                        </div>
+                        
+                        <p><strong>Budget Breakdown (Real Examples):</strong></p>
+                        <ul>
+                            <li><strong>$3,000/month income:</strong> Max rent $900 (includes $200 utilities, $100 insurance)</li>
+                            <li><strong>$4,000/month income:</strong> Max rent $1,200 (comfortable with savings buffer)</li>
+                            <li><strong>$2,500/month income:</strong> Max rent $750 (tight budget - consider roommates)</li>
+                        </ul>
+                        
+                        <p><strong>Save for These Costs:</strong></p>
+                        <ul>
+                            <li>Security deposit: 1 month's rent ($750-1200 typically)</li>
+                            <li>First month's rent: $750-1200</li>
+                            <li>Application fees: $25-50 per person</li>
+                            <li>Moving costs: $500-1000 (truck rental, deposits)</li>
+                            <li>Renters insurance: $10-20/month (required by most landlords)</li>
+                        </ul>
+                        
+                        <p><strong>Build Your Application Profile:</strong></p>
+                        <ul>
+                            <li>Credit score target: 650+ (FICO score - check free at CreditKarma.com)</li>
+                            <li>Income proof: Recent paystubs or job offer letter</li>
+                            <li>Bank statements: Show 2-3 months of savings</li>
+                            <li>References: Current landlord, employer, or professor</li>
+                        </ul>
+                        
+                        <div class="callout warning">
+                            <strong>⚠️ First-Timer Trap:</strong> Landlords aren't flexible on income requirements. If they say "$3k/month income minimum," they mean it. Don't lie—it's lease fraud.
+                        </div>
+                        
+                        <div class="scenario-tips">
+                            <h4>Scenario-Based Tips</h4>
+                            <div class="scenario">
+                                <strong>🎓 Student Scenario:</strong> If you're graduating soon, get your job offer letter early. Many apartments accept "pending employment" with proof.
+                            </div>
+                        </div>
+                        
+                        <button class="mini-btn" onclick="downloadChecklist('prep-checklist')">📋 Prep Checklist</button>
+                    </div>
+
+                    <!-- STEP 2 -->
+                    <div class="content-card" id="leasing-step-2">
+                        <h3>Step 2: Smart Apartment Hunting (6-8 Weeks Before)</h3>
+                        
+                        <p><strong>Pro Tip:</strong> Start early! 70% of rentals are filled within 2 weeks of listing.</p>
+                        
+                        <p><strong>Best Websites (Ranked by Popularity, 2024):</strong></p>
+                        <ul>
+                            <li><strong>Zillow:</strong> #1 most visited - rent estimates, filters, agent connections (free basic, premium $39/month)</li>
+                            <li><strong>Apartments.com:</strong> Largest database, virtual tours, verified listings (free)</li>
+                            <li><strong>Realtor.com:</strong> MLS access, detailed property info, mortgage calculators (free)</li>
+                            <li><strong>StreetEasy:</strong> Best for urban areas (NYC, etc.), neighborhood insights, no-fee listings (free)</li>
+                            <li><strong>HotPads:</strong> Map-based search, commute times, pet-friendly filters (free)</li>
+                            <li><strong>Rent.com:</strong> Cash-back rewards, landlord reviews, application tracking (free)</li>
+                        </ul>
+                        
+                        <p><strong>Research Tools:</strong></p>
+                        <ul>
+                            <li>Crime rates: CrimeGrade.org or local police department sites</li>
+                            <li>Commute time: Google Maps (test rush hour times)</li>
+                            <li>Walkability: WalkScore.com (aim for 70+ score)</li>
+                            <li>Reviews: Yelp, Google, ApartmentRatings.com</li>
+                            <li>Rent trends: Zillow Rent Index (check if prices are rising)</li>
+                        </ul>
+                        
+                        <div class="callout info">
+                            <strong>💡 First-Timer Hack:</strong> Search 6-8 weeks out. Use filters for "pet-friendly" or "furnished" if needed. Save favorites and revisit weekly.
+                        </div>
+                        
+                        <div class="comparison-table">
+                            <h4>Lease Types Comparison</h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Length</th>
+                                        <th>Pros</th>
+                                        <th>Cons</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Month-to-Month</td>
+                                        <td>1 month</td>
+                                        <td>Flexible, easy exit</td>
+                                        <td>Higher rent, no stability</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6-Month</td>
+                                        <td>6 months</td>
+                                        <td>Lower rent than 12-month</td>
+                                        <td>Renewal hassle</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12-Month</td>
+                                        <td>1 year</td>
+                                        <td>Best rates, stability</td>
+                                        <td>Commitment required</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <button class="mini-btn" onclick="downloadChecklist('search-guide')">📋 Search Guide</button>
+                    </div>
+
+                    <!-- STEP 3 -->
+                    <div class="content-card" id="leasing-step-3">
+                        <h3>Step 3: Tour Like a Pro (4-6 Weeks Before)</h3>
+                        
+                        <p><strong>What to Check (Don't Skip This!):</strong></p>
+                        <ul>
+                            <li><strong>Plumbing:</strong> Run faucets, flush toilets, check for leaks (cost: $200-500 to fix)</li>
+                            <li><strong>Appliances:</strong> Test stove, oven, fridge, dishwasher (ask: "Included? Who repairs?")</li>
+                            <li><strong>HVAC:</strong> Test heat/AC, check vents (average utility bill: $100-200/month)</li>
+                            <li><strong>Structure:</strong> Cracks in walls/ceiling, water stains, mold (red flag if present)</li>
+                            <li><strong>Doors/Windows:</strong> Locks work? Windows seal? Emergency exits clear?</li>
+                            <li><strong>Storage:</strong> Closets, basement access (essential for first-timers)</li>
+                            <li><strong>Parking:</strong> Assigned spot? Guest parking? Street parking rules?</li>
+                            <li><strong>Noise:</strong> Thin walls? Street noise? Construction nearby?</li>
+                            <li><strong>Internet:</strong> WiFi strength? Provider options? Speed test?</li>
+                        </ul>
+                        
+                        <p><strong>Questions to Ask (Print This List):</strong></p>
+                        <ul>
+                            <li>"What's included in rent? Water? Trash? Internet?"</li>
+                            <li>"What's the average utility bill for this unit?"</li>
+                            <li>"How long for maintenance response? Emergency policy?"</li>
+                            <li>"Any planned renovations or rent increases?"</li>
+                            <li>"Can I see the lease? Subletting policy?"</li>
+                            <li>"Pet policy? Deposit refundable?"</li>
+                            <li>"What's the neighborhood like? Safety concerns?"</li>
+                            <li>"How do I pay rent? Late fees? Grace period?"</li>
+                            <li>"Can I install shelves or make minor changes?"</li>
+                        </ul>
+                        
+                        <div class="callout warning">
+                            <strong>🚨 Red Flags to Run From:</strong> Landlord avoids lease questions • Cash-only payments • Pressure to sign immediately • Poorly maintained common areas • No emergency contact info
+                        </div>
+                        
+                        <div class="interactive-checklist">
+                            <h4>📋 Tour Checklist (Check as You Go)</h4>
+                            <ul class="checklist-items">
+                                <li><input type="checkbox"> Plumbing tested</li>
+                                <li><input type="checkbox"> Appliances working</li>
+                                <li><input type="checkbox"> No visible damage</li>
+                                <li><input type="checkbox"> Utilities clarified</li>
+                                <li><input type="checkbox"> Lease terms reviewed</li>
+                                <li><input type="checkbox"> Neighborhood checked</li>
+                                <li><input type="checkbox"> Parking/storage adequate</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="mini-btn" onclick="downloadChecklist('tour-checklist')">📋 Full Tour Checklist</button>
+                    </div>
+
+                    <!-- STEP 4 -->
+                    <div class="content-card" id="leasing-step-4">
+                        <h3>Step 4: Submit a Strong Application (2-3 Weeks Before)</h3>
+                        
+                        <p><strong>Required Documents (Gather These Now):</strong></p>
+                        <ul>
+                            <li>Government ID (driver's license/passport)</li>
+                            <li>Proof of income: 2 recent paystubs or job offer</li>
+                            <li>Bank statements: 2-3 months showing savings</li>
+                            <li>References: Employer, previous landlord, personal</li>
+                            <li>Credit report: Free annual from AnnualCreditReport.com</li>
+                        </ul>
+                        
+                        <p><strong>Application Strategy:</strong></p>
+                        <ul>
+                            <li>Apply to 3-5 places simultaneously (landlords check availability)</li>
+                            <li>Be honest about everything - lies = automatic denial</li>
+                            <li>If credit is low, offer higher deposit or co-signer</li>
+                            <li>Follow up politely after 3-5 days</li>
+                        </ul>
+                        
+                        <p><strong>Rental Guarantors (What They Are & When to Use):</strong></p>
+                        <p>A rental guarantor is a third party (often a parent or relative) who agrees to pay your rent if you can't. They're like a co-signer but specifically for rentals.</p>
+                        <ul>
+                            <li><strong>Pros:</strong> Helps if you have low credit or income, no eviction risk to guarantor if you pay on time</li>
+                            <li><strong>Cons:</strong> Guarantor pays if you default, can damage their credit, costs $50-200/month in fees</li>
+                            <li><strong>When to Use:</strong> First-time renter with no credit history, student with part-time income, or if landlord requires it</li>
+                        </ul>
+                        
+                        <div class="callout info">
+                            <strong>💡 Approval Timeline:</strong> 3-7 business days. They'll run background check ($20-50), credit check ($10-20), and reference calls.
+                        </div>
+                        
+                        <div class="callout success">
+                            <strong>✅ First-Timer Advantage:</strong> Many complexes offer "first-time renter specials" - ask! You might get application fee waived or deposit reduced.
+                        </div>
+                        
+                        <button class="mini-btn" onclick="downloadChecklist('application-checklist')">📋 Application Checklist</button>
+                    </div>
+
+                    <!-- STEP 5 -->
+                    <div class="content-card" id="leasing-step-5">
+                        <h3>Step 5: Review & Sign the Lease (1-2 Weeks Before)</h3>
+                        
+                        <p><strong>Key Clauses to Check:</strong></p>
+                        <ul>
+                            <li><strong>Rent amount & due date:</strong> Usually 1st of month, late fees $25-50/day</li>
+                            <li><strong>Lease term:</strong> 12 months standard, auto-renewal clauses</li>
+                            <li><strong>Security deposit:</strong> Max 2 months rent in most states, held in escrow</li>
+                            <li><strong>Pet policy:</strong> Breed restrictions, deposit ($200-500), monthly fee</li>
+                            <li><strong>Termination:</strong> 30-day notice, early termination fees</li>
+                            <li><strong>Maintenance:</strong> Who pays for what, response times</li>
+                        </ul>
+                        
+                        <p><strong>Negotiation Tips (Be Specific & Polite):</strong></p>
+                        <ul>
+                            <li>"Can you waive the $500 admin fee for a first-time renter?" (Often yes - saves you money)</li>
+                            <li>"Market rate for similar units is $1,100 - can we do $1,050?" (Research comps on Zillow first)</li>
+                            <li>"Can utilities be included for the first month?" (Good if you're moving from far away)</li>
+                            <li>"Can we reduce the security deposit to $800?" (If you have excellent credit/references)</li>
+                            <li>Be polite but firm - most landlords negotiate 5-10%. Have backup options ready.</li>
+                        </ul>
+                        
+                        <div class="lease-examples">
+                            <h4>Good Clause vs. Bad Clause Examples</h4>
+                            <div class="clause-good">
+                                <strong>✅ Good:</strong> "Landlord will respond to maintenance within 24 hours for emergencies, 72 hours for non-emergencies." (Clear timeline)
+                            </div>
+                            <div class="clause-bad">
+                                <strong>❌ Bad:</strong> "Tenant responsible for all repairs over $100." (Unfair burden - major repairs are landlord's job)
+                            </div>
+                            <p><em>For more examples, see the helpful resources below.</em></p>
+                        </div>
+                        
+                        <div class="callout warning">
+                            <strong>⚠️ Don't Sign If:</strong> Terms are unclear • You can't afford it • Early termination fees > 1 month's rent • No copies provided • Pressure tactics used
+                        </div>
+                        
+                        <button class="mini-btn" onclick="downloadChecklist('lease-review')">📋 Lease Review Guide</button>
+                    </div>
+
+                    <!-- STEP 6 -->
+                    <div class="content-card" id="leasing-step-6">
+                        <h3>Step 6: Move-In & Know Your Rights (Move-In Day)</h3>
+                        
+                        <p><strong>Move-In Inspection (Critical!):</strong></p>
+                        <ul>
+                            <li>Take 20+ photos/videos of every room, documenting existing damage</li>
+                            <li>Get landlord to sign move-in checklist with you</li>
+                            <li>Keep copies - this protects your deposit</li>
+                            <li>Note utility meter readings</li>
+                        </ul>
+                        
+                        <p><strong>Setup Essentials:</strong></p>
+                        <ul>
+                            <li>Change locks if needed (ask landlord first)</li>
+                            <li>Get emergency contact numbers in writing</li>
+                            <li>Set up utilities in your name</li>
+                            <li>Submit proof of renters insurance</li>
+                        </ul>
+                        
+                        <div class="callout warning">
+                            <strong>⚠️ Know Your Rights:</strong> Landlord must provide habitable space. If heat fails in winter, you can repair and deduct from rent (check your state's laws).
+                        </div>
+                        
+                        <div class="first-week-checklist">
+                            <h4>🏠 First Week Tasks</h4>
+                            <ul>
+                                <li>Report any issues in writing</li>
+                                <li>Meet neighbors</li>
+                                <li>Update address everywhere</li>
+                                <li>Find local grocery stores, laundromats</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="mini-btn" onclick="downloadChecklist('move-in-guide')">📋 Move-In Guide</button>
+                    </div>
+                </div>
+
+                <div class="rights-banner">
+                    <strong>Legal limits matter:</strong> security deposit caps, entry notice, eviction rules, late fee maximums, and repair timelines are all enforceable by law.
+                </div>
+
+                <div class="rights-container">
+                    <div class="rights-section">
+                        <h3>Know Your Renter's Rights</h3>
+                        <div class="rights-grid">
+                            <div class="right-card">
+                                <div class="right-icon">🏠</div>
+                                <h4>Right to Habitability</h4>
+                                <p>Your home must be safe and livable.</p>
+                                <ul>
+                                    <li>Working heat/AC, hot water, electricity</li>
+                                    <li>Safe structure, no mold, no pests</li>
+                                    <li>Functional locks and lighting</li>
+                                </ul>
+                                <p class="right-action">If your unit is unsafe, request repairs in writing. If ignored, you may be able to withhold rent or repair and deduct, depending on state law.</p>
+                            </div>
+                            <div class="right-card">
+                                <div class="right-icon">🔒</div>
+                                <h4>Right to Privacy</h4>
+                                <p>Your landlord must respect your space.</p>
+                                <ul>
+                                    <li>24-48 hours notice before entering</li>
+                                    <li>Only emergency exceptions allow surprise entry</li>
+                                    <li>No random inspections or harassment</li>
+                                </ul>
+                                <p class="right-action">If your landlord enters without notice, document it and remind them of your rights in writing.</p>
+                            </div>
+                            <div class="right-card">
+                                <div class="right-icon">💰</div>
+                                <h4>Security Deposit Protection</h4>
+                                <p>Your deposit is not free rent.</p>
+                                <ul>
+                                    <li>Must be returned within 30-45 days</li>
+                                    <li>Must include itemized deductions</li>
+                                    <li>Normal wear-and-tear is not deductible</li>
+                                </ul>
+                                <p class="right-action">Ask for an escrow receipt and keep your own move-in photos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rights-section">
+                        <h3>Legal Limits You Need to Know</h3>
+                        <div class="legal-limits-grid">
+                            <div class="limit-card">
+                                <h4>Security Deposit Caps</h4>
+                                <p>Most states cap deposits at 1-2 months' rent. Example: California allows 2 months for unfurnished units and 3 months for furnished.</p>
+                                <div class="limit-note">Ask for the exact deposit policy in writing.</div>
+                            </div>
+                            <div class="limit-card">
+                                <h4>Late Fee Rules</h4>
+                                <p>Late fees are usually limited to 5-10% of rent or a flat amount. Excessive penalties may be illegal.</p>
+                                <div class="limit-note">Confirm the grace period and fee amount in the lease.</div>
+                            </div>
+                            <div class="limit-card">
+                                <h4>Entry Notice Requirements</h4>
+                                <p>Landlords generally must provide 24-48 hours notice before entry, except for emergencies.</p>
+                                <div class="limit-note">Keep copies of any written notices you receive.</div>
+                            </div>
+                            <div class="limit-card">
+                                <h4>Repair Timelines</h4>
+                                <p>Many areas require landlords to fix serious problems within 7-14 days after written notice.</p>
+                                <div class="limit-note">Use email or certified mail for repair requests.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rights-section">
+                        <h3>Eviction & Notice Rules</h3>
+                        <div class="eviction-grid">
+                            <div class="eviction-card">
+                                <h4>Non-Payment of Rent</h4>
+                                <p>Most states require a 3-5 day notice to pay or quit before an eviction can be filed.</p>
+                            </div>
+                            <div class="eviction-card">
+                                <h4>Lease Violations</h4>
+                                <p>For rule breaches, landlords often must give a cure period of 7-14 days before eviction steps continue.</p>
+                            </div>
+                            <div class="eviction-card">
+                                <h4>End of Lease</h4>
+                                <p>Notice requirements vary, but 30-60 days is common for no-cause nonrenewal.</p>
+                            </div>
+                            <div class="eviction-card">
+                                <h4>Illegal Eviction</h4>
+                                <p>Lock changes, utility shutoffs, or removing belongings without court action are illegal.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rights-section">
+                        <h3>How to Use These Rights</h3>
+                        <div class="action-steps">
+                            <div class="action-step">
+                                <strong>1.</strong> Document everything—photos, emails, dates, and names.
+                            </div>
+                            <div class="action-step">
+                                <strong>2.</strong> Send repair requests in writing and keep a copy.
+                            </div>
+                            <div class="action-step">
+                                <strong>3.</strong> Check local tenant law websites before withholding rent or repairing yourself.
+                            </div>
+                            <div class="action-step">
+                                <strong>4.</strong> Use local legal aid or HUD when a landlord violates your rights.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wear-and-tear-section">
+                        <h3>Normal Wear and Tear vs. Damage</h3>
+                        <p>Understanding the difference is crucial for your security deposit refund. Normal wear and tear are expected and should not be deducted from your deposit. This includes things like minor scuffs on walls, worn carpets, and faded paint. Damage, however, is caused by neglect or abuse and can be deducted from your deposit. Examples include large holes in walls, broken windows, and stains that cannot be removed.</p>
+                    </div>
+
+                    <div class="issues-section">
+                        <h3>Common Issues and How to Handle Them</h3>
+                        <div class="issue-card">
+                            <h4>1. Maintenance Requests</h4>
+                            <p>Always report maintenance issues in writing. Keep a copy of your request and any correspondence. If the issue is urgent (like no heat in winter), follow up with a phone call.</p>
+                        </div>
+                        <div class="issue-card">
+                            <h4>2. Security Deposit Disputes</h4>
+                            <p>Take photos of the unit's condition before you move out. Send a written request for your deposit return, including your new address. If you don't receive it within the legal time frame, follow up with a demand letter.</p>
+                        </div>
+                        <div class="issue-card">
+                            <h4>3. Eviction Notices</h4>
+                            <p>Never ignore an eviction notice. Respond in writing, and seek legal assistance immediately. Document all communications with your landlord.</p>
+                        </div>
+                    </div>
+
+                    <div class="warning-section">
+                        <h3>Warning Signs of Potential Rental Scams</h3>
+                        <p>Be cautious of deals that seem too good to be true, landlords who pressure you to pay in cash, or those who avoid providing a written lease. Always verify the legitimacy of the rental listing and the landlord's identity. Trust your instincts—if something feels off, it probably is.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="forum" class="section">
+            <div class="content">
+                <h2>It Takes a Village Forum</h2>
+                <div class="forum-container">
+                    <div class="channel-sidebar">
+                        <h3>Channels</h3>
+                        <div class="channel-list">
+                            <div class="channel active" onclick="selectChannel('general')">
+                                <span class="channel-icon">#</span>
+                                <span>general</span>
+                            </div>
+                            <div class="channel" onclick="selectChannel('credit-help')">
+                                <span class="channel-icon">#</span>
+                                <span>credit-help</span>
+                            </div>
+                            <div class="channel" onclick="selectChannel('loan-advice')">
+                                <span class="channel-icon">#</span>
+                                <span>loan-advice</span>
+                            </div>
+                            <div class="channel" onclick="selectChannel('apartment-hunting')">
+                                <span class="channel-icon">#</span>
+                                <span>apartment-hunting</span>
+                            </div>
+                            <div class="channel" onclick="selectChannel('success-stories')">
+                                <span class="channel-icon">#</span>
+                                <span>success-stories</span>
+                            </div>
+                        </div>
+                        <button class="create-channel-btn" onclick="createChannel()">+ Create Channel</button>
+                    </div>
+                    <div class="chat-area">
+                        <div class="chat-header">
+                            <h4 id="currentChannel"># general</h4>
+                            <p>Welcome to the community discussion!</p>
+                        </div>
+                        <div class="messages-container" id="messagesContainer">
+                            <div class="message">
+                                <div class="message-header">
+                                    <strong>Sarah_M</strong>
+                                    <span class="timestamp">Today at 2:30 PM</span>
+                                </div>
+                                <div class="message-content">Just got approved for my first credit card! Thanks for all the advice about secured cards 🎉</div>
+                            </div>
+                            <div class="message">
+                                <div class="message-header">
+                                    <strong>Alex_K</strong>
+                                    <span class="timestamp">Today at 2:35 PM</span>
+                                </div>
+                                <div class="message-content">Congrats! Remember to keep that utilization low 😊</div>
+                            </div>
+                        </div>
+                        <div class="message-input-area">
+                            <input type="text" id="messageInput" placeholder="Type your message..." onkeypress="handleMessageInput(event)">
+                            <button onclick="sendMessage()">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rights" class="section">
+            <div class="content">
+                <h2 style="margin-top: 50px;">Know Your Renter's Rights</h2>
+                <p style="text-align: center; color: #666; margin-bottom: 20px;"><em>These are your legal protections. Know them, use them, protect yourself.</em></p>
+                <div class="rights-banner">
+                    <strong>Legal limits matter:</strong> security deposit caps, entry notice, eviction rules, late fee maximums, and repair timelines are all enforceable by law.
+                </div>
+                
+                <div class="rights-container">
+                    <div class="rights-section">
+                        <h3>Your 6 Essential Rights</h3>
+                        <div class="rights-grid">
+                            <div class="right-card">
+                                <h4>1. Safe and Habitable Housing</h4>
+                                <p>You have the right to a rental unit that is safe, clean, and fit for human habitation. This includes proper maintenance, repairs, and compliance with health and safety codes.</p>
+                            </div>
+                            <div class="right-card">
+                                <h4>2. Security Deposit Protection</h4>
+                                <p>Your landlord can only charge a security deposit that is equal to 1-2 months' rent, depending on state law. This deposit must be returned to you within a specific time frame after you move out, minus any deductions for damages beyond normal wear and tear.</p>
+                            </div>
+                            <div class="right-card">
+                                <h4>3. Privacy and Quiet Enjoyment</h4>
+                                <p>You have the right to privacy in your home. Landlords must provide reasonable notice (usually 24 hours) before entering your unit, and can only enter for legitimate reasons, such as repairs or inspections.</p>
+                            </div>
+                            <div class="right-card">
+                                <h4>4. Fair Treatment and Non-Discrimination</h4>
+                                <p>It is illegal for landlords to discriminate against you based on race, color, national origin, religion, sex, familial status, or disability. You have the right to fair and equal treatment in all aspects of the rental process.</p>
+                            </div>
+                            <div class="right-card">
+                                <h4>5. Right to Organize</h4>
+                                <p>You have the right to join or organize tenant unions or associations. Landlords cannot retaliate against you for participating in these activities.</p>
+                            </div>
+                            <div class="right-card">
+                                <h4>6. Legal Recourse</h4>
+                                <p>If your rights are violated, you have the right to seek legal recourse. This includes the right to sue for damages, seek injunctive relief, and recover attorney's fees in certain cases.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rights-section">
+                        <h3>Additional Important Rights</h3>
+                        <div class="rights-grid">
+                            <div class="right-card">
+                                <h4>7. Right to a Written Lease</h4>
+                                <p>You have the right to receive a written copy of your lease or rental agreement. This document should outline all terms and conditions of your tenancy, including rent amount, due date, and lease duration.</p>
+                            </div>
+                            <div class="right-card">
+                                <h4>8. Right to Repairs</h4>
+                                <p>Your landlord is responsible for making necessary repairs to keep the property in a habitable condition. This includes fixing plumbing, heating, and electrical issues, as well as addressing pest infestations.</p>
+                            </div>
+                            <div class="right-card">
+                                <h4>9. Right to Notice of Rent Increases</h4>
+                                <p>Landlords must provide proper notice before increasing your rent. The notice period and allowable increase amount vary by state and local laws.</p>
+                            </div>
+                            <div class="right-card">
+                                <h4>10. Right to Challenge Eviction</h4>
+                                <p>You have the right to contest an eviction notice in court. Landlords must follow the legal eviction process, which includes providing proper notice and a valid reason for eviction.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rights-section">
+                        <h3>Legal Limits You Need to Know</h3>
+                        <div class="legal-limits-grid">
+                            <div class="limit-card">
+                                <h4>Security Deposit Caps</h4>
+                                <p>Most states limit deposits to 1-2 months' rent. In California, it’s 2 months for unfurnished units and 3 months for furnished.</p>
+                                <div class="limit-note">Tip: Ask for the exact deposit policy in writing.</div>
+                            </div>
+                            <div class="limit-card">
+                                <h4>Late Fee Limits</h4>
+                                <p>Late fees are often capped around 5-10% of rent or a fixed amount. Excessive charges can be illegal.</p>
+                                <div class="limit-note">Tip: Confirm the grace period and fee amount in your lease.</div>
+                            </div>
+                            <div class="limit-card">
+                                <h4>Entry Notice Requirements</h4>
+                                <p>Landlords usually must provide 24-48 hours' notice before entering, except in emergencies.</p>
+                                <div class="limit-note">Tip: Keep copies of any entry notices you receive.</div>
+                            </div>
+                            <div class="limit-card">
+                                <h4>Repair Timelines</h4>
+                                <p>Many states require landlords to fix serious issues within 7-14 days after written notice.</p>
+                                <div class="limit-note">Tip: Send requests by email and save the timestamp.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rights-section">
+                        <h3>Eviction & Notice Rules</h3>
+                        <div class="eviction-grid">
+                            <div class="eviction-card">
+                                <h4>Non-Payment of Rent</h4>
+                                <p>Landlords usually must give a 3-5 day notice to pay or quit before filing eviction.</p>
+                            </div>
+                            <div class="eviction-card">
+                                <h4>Lease Violation</h4>
+                                <p>For rule breaches, landlords typically provide a cure period, often 7-14 days, before eviction.</p>
+                            </div>
+                            <div class="eviction-card">
+                                <h4>End of Lease</h4>
+                                <p>Notice requirements vary by state: 30-60 days is common for no-cause nonrenewal.</p>
+                            </div>
+                            <div class="eviction-card">
+                                <h4>Illegal Eviction</h4>
+                                <p>Changing locks, shutting off utilities, or removing belongings without court action is illegal.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rights-section">
+                        <h3>How to Use These Rights</h3>
+                        <div class="action-steps">
+                            <div class="action-step">
+                                <strong>1.</strong> Document everything — photos, emails, dates, and names.
+                            </div>
+                            <div class="action-step">
+                                <strong>2.</strong> Send repair requests in writing and keep a copy.
+                            </div>
+                            <div class="action-step">
+                                <strong>3.</strong> Check local tenant law websites before withholding rent or repairing yourself.
+                            </div>
+                            <div class="action-step">
+                                <strong>4.</strong> Use local legal aid or HUD when a landlord violates your rights.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wear-and-tear-section">
+                        <h3>Normal Wear and Tear vs. Damage</h3>
+                        <p>Understanding the difference is crucial for your security deposit refund. Normal wear and tear are expected and should not be deducted from your deposit. This includes things like minor scuffs on walls, worn carpets, and faded paint. Damage, however, is caused by neglect or abuse and can be deducted from your deposit. Examples include large holes in walls, broken windows, and stains that cannot be removed.</p>
+                    </div>
+
+                    <div class="issues-section">
+                        <h3>Common Issues and How to Handle Them</h3>
+                        <div class="issue-card">
+                            <h4>1. Maintenance Requests</h4>
+                            <p>Always report maintenance issues in writing. Keep a copy of your request and any correspondence. If the issue is urgent (like no heat in winter), follow up with a phone call.</p>
+                        </div>
+                        <div class="issue-card">
+                            <h4>2. Security Deposit Disputes</h4>
+                            <p>Take photos of the unit's condition before you move out. Send a written request for your deposit return, including your new address. If you don't receive it within the legal time frame, follow up with a demand letter.</p>
+                        </div>
+                        <div class="issue-card">
+                            <h4>3. Eviction Notices</h4>
+                            <p>Never ignore an eviction notice. Respond in writing, and seek legal assistance immediately. Document all communications with your landlord.</p>
+                        </div>
+                    </div>
+
+                    <div class="warning-section">
+                        <h3>Warning Signs of Potential Rental Scams</h3>
+                        <p>Be cautious of deals that seem too good to be true, landlords who pressure you to pay in cash, or those who avoid providing a written lease. Always verify the legitimacy of the rental listing and the landlord's identity. Trust your instincts—if something feels off, it probably is.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
